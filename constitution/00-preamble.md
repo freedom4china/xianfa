@@ -3,7 +3,7 @@ id: 00
 title: 序言
 status: draft
 section: preamble
-proposer: @initiator
+proposer: 社区
 created_at: 2026-09-06
 rationale: "阐明国家价值、目标与宪法精神。"
 ---
