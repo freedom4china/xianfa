@@ -9,31 +9,35 @@ jobs:
   lint-markdown:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      # 【核心修复】升级到 v5 以原生支持 Node 24 环境
+      - uses: actions/checkout@v5
 
-      # 如果你需要 node 环境来运行 markdownlint-cli，指定 Node 24（GitHub 推荐使用最新受支持的 LTS/Current）
+      # 【核心修复】升级到 v5 以原生支持 Node 24 环境
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: '24'
 
+      # 注意：markdownlint-cli 是通过 npm 全局安装的，和 Action 运行环境无关，这里保持原样
       - name: Install markdownlint-cli
         run: npm install -g markdownlint-cli
 
+      # 运行 markdown 检查，如果失败不会阻断整个 CI 流程
       - name: Run markdownlint
         run: markdownlint "**/*.md" || true
 
   validate-front-matter:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      # 【核心修复】升级到 v5 以原生支持 Node 24 环境
+      - uses: actions/checkout@v5
 
-      # setup-python 本身是一个 action（其代码由 GitHub 执行），对于该 action 的内部 runtime 会由 action 作者决定。
-      # 这里指定 python 版本用于后续脚本运行。
+      # 【核心修复】升级到 v5 以原生支持 Node 24 环境
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
+      # 运行你的 Python 前置元数据校验脚本
       - name: Run front-matter validator
         run: python3 scripts/validate_front_matter.py
