@@ -1,13 +1,3 @@
----
-id: 01
-title: 总纲
-status: active
-section: general-principles
-proposer: 社区
-created_at: 2026-09-07
-rationale: "确立国家性质、法治原则、政党政治与军队国家化原则。"
----
-
 # 第一章 总纲
 
 第1条（国体与政体）

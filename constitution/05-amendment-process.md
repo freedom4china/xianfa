@@ -1,13 +1,3 @@
----
-id: 05
-title: 修宪与修正程序
-status: active
-section: amendment
-proposer: 社区
-created_at: 2026-09-06
-rationale: "保障宪法稳定性与民主修订通道。"
----
-
 # 第五章 修宪程序
 
 第1条（修宪提议）

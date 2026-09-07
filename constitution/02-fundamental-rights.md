@@ -1,15 +1,3 @@
----
-id: 02
-title: 基本权利与公民义务
-status: active
-section: fundamental-rights
-proposer: 社区
-created_at: 2026-09-06
-rationale: "基于普世价值与现代法治国家的权利保障。"
-references:
-  - Universal Declaration of Human Rights
----
-
 # 第二章 基本权利
 
 第1条（人之尊严）

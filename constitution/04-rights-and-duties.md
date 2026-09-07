@@ -1,13 +1,3 @@
----
-id: 04
-title: 权利与义务
-status: active
-section: rights-and-duties
-proposer: 社区
-created_at: 2026-09-06
-rationale: "平衡权利保障与公民义务。"
----
-
 # 第四章 权利与义务
 
 第1条（选举权与被选举权）

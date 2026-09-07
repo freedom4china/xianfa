@@ -1,13 +1,3 @@
----
-id: 03
-title: 国家机构与权力分立
-status: active
-section: structure-of-government
-proposer: 社区
-created_at: 2026-09-06
-rationale: "引入三权分立与权力制衡机制。"
----
-
 # 第三章 国家机构
 
 第1节 总则

@@ -1,7 +1,3 @@
----
-name: RFC 模板
----
-
 # RFC-XXXX: 标题
 
 - **作者**: @yourhandle
