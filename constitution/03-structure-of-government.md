@@ -1,5 +1,5 @@
 ---
-id: 02
+id: 03
 title: 国家机构与权力分立
 status: active
 section: structure-of-government
@@ -8,7 +8,7 @@ created_at: 2026-09-06
 rationale: "引入三权分立与权力制衡机制。"
 ---
 
-第二章 国家机构
+第三章 国家机构
 
 第1节 总则
 

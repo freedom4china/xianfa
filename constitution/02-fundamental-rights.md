@@ -1,5 +1,5 @@
 ---
-id: 01
+id: 02
 title: 基本权利与公民义务
 status: active
 section: fundamental-rights
@@ -10,7 +10,7 @@ references:
   - Universal Declaration of Human Rights
 ---
 
-第一章 基本权利
+#第二章 基本权利
 
 第1条（人之尊严）
 人人生而自由并享有尊严与权利。国家尊重与保障个人的不可剥夺的人权。

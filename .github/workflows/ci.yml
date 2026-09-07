@@ -9,10 +9,8 @@ jobs:
   lint-markdown:
     runs-on: ubuntu-latest
     steps:
-      # 【核心升级】从 v4 升级到 v6/v7，全面适配 node24 的官方最新规范
       - uses: actions/checkout@v6
 
-      # 【核心升级】官方 setup-node 新版本内部已更改为 using: 'node24'
       - name: Setup Node
         uses: actions/setup-node@v6
         with:
@@ -27,10 +25,8 @@ jobs:
   validate-front-matter:
     runs-on: ubuntu-latest
     steps:
-      # 【核心升级】保持一致，全部切到新版
       - uses: actions/checkout@v6
 
-      # 【核心升级】actions/setup-python 从 v5 升级到 v6，其内部配置已正式改为 using: 'node24'
       - name: Setup Python
         uses: actions/setup-python@v6
         with:
