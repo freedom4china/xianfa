@@ -1,0 +1,48 @@
+name: 发布 Docsify 网站
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: 获取仓库内容
+        uses: actions/checkout@v4
+
+      - name: 配置 GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: 准备网站文件
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p _site/constitution _site/proposals
+          cp site/index.html site/_sidebar.md site/_404.md _site/
+          cp README.md CONTRIBUTING.md GOVERNANCE.md CODE_OF_CONDUCT.md LICENSE _site/
+          cp constitution/*.md _site/constitution/
+          cp proposals/*.md _site/proposals/
+          touch _site/.nojekyll
+
+      - name: 上传网站文件
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: 发布到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

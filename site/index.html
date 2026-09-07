@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中华民主共和国宪法草案</title>
+  <meta name="description" content="中华民主共和国宪法草案的协作文本。">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    :root {
+      --theme-color: #9b2c2c;
+      --sidebar-width: 260px;
+    }
+
+    .app-name-link,
+    .markdown-section h1,
+    .markdown-section h2,
+    .markdown-section h3 {
+      font-weight: 600;
+    }
+
+    .markdown-section {
+      max-width: 900px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">正在加载宪法文本……</div>
+  <script>
+    window.$docsify = {
+      name: '中华民主共和国宪法草案',
+      repo: 'https://github.com/freedom4china/xianfa',
+      loadSidebar: true,
+      subMaxLevel: 2,
+      homepage: 'README.md',
+      search: {
+        placeholder: '搜索宪法文本',
+        noData: '没有找到相关内容',
+        depth: 4
+      },
+      notFoundPage: true,
+      auto2top: true
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+</body>
+</html>
