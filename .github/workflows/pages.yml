@@ -1,4 +1,4 @@
-name: 发布 Docsify 网站
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -21,13 +21,13 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: 获取仓库内容
+      - name: Fetch repository
         uses: actions/checkout@v4
 
-      - name: 配置 GitHub Pages
+      - name: Config GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: 准备网站文件
+      - name: Prepare website files
         shell: bash
         run: |
           set -euo pipefail
@@ -38,11 +38,11 @@ jobs:
           cp proposals/*.md _site/proposals/
           touch _site/.nojekyll
 
-      - name: 上传网站文件
+      - name: Upload artifact for deployment
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
-      - name: 发布到 GitHub Pages
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
