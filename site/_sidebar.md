@@ -1,4 +1,4 @@
-- **[📖 首页](README.md)**
+- [📖 首页](README.md)
 
 - 宪法草案
   - [序言](constitution/00-preamble.md)
