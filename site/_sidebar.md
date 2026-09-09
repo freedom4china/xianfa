@@ -1,3 +1,5 @@
+- **[📖 首页](README.md)**
+
 - 宪法草案
   - [序言](constitution/00-preamble.md)
   - [第一章 基本原则](constitution/01-general-principles.md)
@@ -11,3 +13,7 @@
   - [治理规则](GOVERNANCE.md)
   - [行为准则](CODE_OF_CONDUCT.md)
   - [RFC 模板](proposals/RFC-0001-template.md)
+
+---
+
+**项目地址**: [GitHub](https://github.com/freedom4china/LivingInChina)
