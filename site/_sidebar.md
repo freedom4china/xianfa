@@ -1,3 +1,5 @@
+- [📖 首页](README.md)
+
 - 宪法草案
   - [序言](宪法/00-序言.md)
   - [第一章 基本原则](宪法/01-基本原则.md)
@@ -11,3 +13,7 @@
   - [治理规则](GOVERNANCE.md)
   - [行为准则](CODE_OF_CONDUCT.md)
   - [征求意见稿模板](征求意见稿/RFC-0001-template.md)
+
+---
+
+**项目地址**: [GitHub](https://github.com/freedom4china/xianfa)
