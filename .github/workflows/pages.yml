@@ -31,11 +31,11 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p _site/constitution _site/proposals
+          mkdir -p _site/宪法 _site/征求意见稿
           cp site/index.html site/_sidebar.md site/_404.md _site/
           cp README.md CONTRIBUTING.md GOVERNANCE.md CODE_OF_CONDUCT.md LICENSE _site/
-          cp constitution/*.md _site/constitution/
-          cp proposals/*.md _site/proposals/
+          cp 宪法/*.md _site/宪法/
+          cp 征求意见稿/*.md _site/征求意见稿/
           touch _site/.nojekyll
 
       - name: Upload GitHub Pages artifact
